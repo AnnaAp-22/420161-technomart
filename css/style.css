@@ -1,13 +1,441 @@
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;;
     font-size: 13px;
-    line-height: 24px;
-    color: rgb(0, 0, 0);
+    color: #000000;
+    font-weight: 400;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
 }
-h2
-{
-    font-family: "Cuprum";
-    font-size: 36px;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+.page-title {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
-    font-weight: bold;
 }
+.page-header {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+}
+
+.header-bar{
+    background-color: #293449;
+  /*  min-height: 42px;   /***********врем*/
+}
+.btn {
+    display: block;
+    padding: 10px 0 10px 0;
+  /*  white-space: nowrap;*/
+  /*  overflow: hidden;*/
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #ee3643;
+}
+
+.btn:hover {
+    background-color: #ca2c37;
+    outline: none;
+}
+
+.btn:active {
+    background-color: #ba2732;
+    outline: none;
+}
+.logo-link{
+    float: left;
+    width: 220px;
+    padding: 11px 0 7px 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #ee3643;
+    border-radius: 0;
+    box-shadow: 0 5px #b52933;
+}
+.logo-link:hover{
+    background: #ca2c37;
+    box-shadow: 0 5px 0 0 #9a212a;
+}
+.logo-link:active{
+    background: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26;
+}
+.page-header-content{
+   padding: 46px 0 60px 0;
+     background-color: #f3f7f9;
+}
+.header-content{
+   margin-bottom: 39px;
+    background-color: green;
+
+}
+.header-description{
+    float:left;
+    width: 218px;
+    margin: 3px 51px 0 51px;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    font-weight: 400;
+    color: #ff5357;
+}
+.header-contacts{
+    float:left;
+    width: 270px;
+}
+.user-block{
+    float:right;
+    width: 300px;
+}
+/*МЕНЮ*/
+.main-menu{
+    background: #32425c;
+    border-bottom: 5px solid #293449;
+   /* box-shadow: 0 5px 0 0 #293449;*/
+
+}
+.main-menu ul{
+    font-size: 0;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.main-menu li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+    line-height: 17px;
+}
+.main-menu a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding:20px 30px 18px 30px;
+    /*padding:20px 31px 18px 31px;*/
+
+}
+/*.main-menu li:first-child a {*/
+    /*padding-left: 52px;*/
+    /*!*padding-right: 32px;*!*/
+/*}*/
+
+/*.main-menu li:last-child a {*/
+    /*!*padding-left: 31px;*!*/
+    /*padding-right: 50px;*/
+/*}*/
+
+.main-menu  a:hover{
+    background: #293449;
+}
+.main-menu  a:active{
+    color: #a1a4a8;
+    background: #1d2739;
+}
+/* MAIN start */
+.features {
+    margin: 59px auto 33px auto;
+}
+
+.features-col-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.features-col-right {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.features  section {
+    position: relative;
+    width: 276px;
+    padding-left: 24px;
+}
+.features  section:first-child {
+    background-color: #f6b22d;
+}
+
+.features  section:nth-child(2) {
+    background-color: #4aafde;
+}
+
+.features  section:nth-child(3) {
+    background-color: #cc79d1;
+}
+
+.features  section:nth-child(5) {
+    background-color: #85d179;
+}
+
+.features  section:last-child {
+    background-color: #ffc047;
+}
+
+.features  section:before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+
+}
+/*.flag-new{*/
+    /*position: relative;*/
+/*}*/
+
+/*.flag-new::before{*/
+    /*position: absolute;*/
+    /*z-index: 200;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 60px;*/
+    /*height: 59px;*/
+    /*content: '';*/
+    /*background-image: url('../images/sprite.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: -5px -160px;*/
+/*}*/
+
+.flag-new:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 59px;
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -5px -160px;
+}
+
+.features  section:first-child:before {
+    top: 24%;
+    right: 14%;
+    width: 44px;
+    height: 65px;
+    background-position: -5px -229px;
+
+}
+
+.features  section:nth-child(2):before {
+    top: 27%;
+    right: 9%;
+    width: 75px;
+    height: 61px;
+    background-position: -5px -376px;
+}
+
+.features  section:nth-child(3):before {
+    top: 24%;
+    right: 10%;
+    width: 78px;
+    height: 62px;
+    background-position: -5px -304px;
+}
+
+.features  section:nth-child(5):before {
+    top: 21%;
+    right: 15%;
+    width: 59px;
+    height: 72px;
+    background-position: -5px -78px;
+
+}
+
+.features  section:last-child:before {
+    top: 26%;
+    right: 10%;
+    width: 78px;
+    height: 63px;
+    background-position: -5px -5px;
+
+}
+.feature-title {
+    width: 170px;
+    margin: 21px 0 12px 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.feature-btn {
+    width: 135px;
+    margin-bottom: 22px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.feature-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.feature-btn:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.features-slider {
+    position: relative;
+    width: 620px;
+    min-height: 266px;
+}
+/* Popular  */
+.popular-header {
+    margin-bottom: 20px;
+    padding: 25px 24px 26px 26px;
+    background-color: #f7f3ec;
+}
+
+.popular-header h2 {
+    float: left;
+   /*ax-width: 60%;*/
+    color: #32425c;
+}
+
+.popular-btn {
+   width: 253px;
+   float: right;
+}
+.popular-catalog {
+    font-size: 0;
+}
+
+.catalog-item {
+    position: relative;
+    width: 218px;
+    min-height: 316px;
+    margin-right: 20px;
+    margin-bottom: 21px;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 18px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+}
+.popular-catalog .catalog-item:nth-child(4n) {
+    margin-right: 0;
+}
+.catalog-item-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 218px;
+    height: 160px;
+    margin-bottom: 18px;
+    text-align: center;
+   /* line-height: 164px;*/
+    /*overflow: hidden;*/
+}
+
+.catalog-item-image img {
+    vertical-align: middle;
+}
+.catalog-item h3 {
+    margin: 0 0 12px 0;
+    padding: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.catalog-price-full {
+    min-height: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.catalog-price-current {
+    position: relative;
+    width: 80px;
+    margin: 0 0 20px 42px;
+    padding: 10px 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.catalog-price-current:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -19px;
+    width: 0;
+    height: 0;
+    border: 19px solid #ffffff;
+    border-left-color: #ee3643;
+}
+
+
+/****sprite*/
+/**/
+/*.sprite {*/
+    /*background-image: url(spritesheet.png);*/
+    /*background-repeat: no-repeat;*/
+    /*display: block;*/
+/*}*/
+
+/*.sprite-deliv_car {*/
+    /*width: 78px;*/
+    /*height: 63px;*/
+    /*background-position: -5px -5px;*/
+/*}*/
+
+/*.sprite-discount {*/
+    /*width: 59px;*/
+    /*height: 72px;*/
+    /*background-position: -5px -78px;*/
+/*}*/
+
+/*.sprite-flag-new {*/
+    /*width: 60px;*/
+    /*height: 59px;*/
+    /*background-position: -5px -160px;*/
+/*}*/
+
+/*.sprite-materials {*/
+    /*width: 44px;*/
+    /*height: 65px;*/
+    /*background-position: -5px -229px;*/
+/*}*/
+
+/*.sprite-technics {*/
+    /*width: 78px;*/
+    /*height: 62px;*/
+    /*background-position: -5px -304px;*/
+/*}*/
+
+/*.sprite-tools {*/
+    /*width: 75px;*/
+    /*height: 61px;*/
+    /*background-position: -5px -376px;*/
+/*}*/
