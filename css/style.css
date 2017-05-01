@@ -28,19 +28,24 @@ body {
     font-weight: 400;
     text-transform: uppercase;
 }
+.page-text {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 24px;
+}
 .page-header {
     font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
 .header-bar{
     background-color: #293449;
-  /*  min-height: 42px;   /***********врем*/
+
 }
 .btn {
     display: block;
     padding: 10px 0 10px 0;
-  /*  white-space: nowrap;*/
-  /*  overflow: hidden;*/
+    white-space: nowrap;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
@@ -86,7 +91,7 @@ body {
 }
 .header-content{
    margin-bottom: 39px;
-    background-color: green;
+/*    background-color: green;*/
 
 }
 .header-description{
@@ -311,7 +316,7 @@ body {
 
 .popular-header h2 {
     float: left;
-   /*ax-width: 60%;*/
+
     color: #32425c;
 }
 
@@ -344,17 +349,19 @@ body {
     vertical-align: top;
     width: 218px;
     height: 160px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     text-align: center;
    /* line-height: 164px;*/
-    /*overflow: hidden;*/
+
 }
 
 .catalog-item-image img {
-    vertical-align: middle;
+    margin-top: 2px;
+
 }
 .catalog-item h3 {
-    margin: 0 0 12px 0;
+    margin: 0;
+    margin-bottom: 12px;
     padding: 0 25px;
     font-size: 18px;
     line-height: 20px;
@@ -374,8 +381,7 @@ body {
     width: 80px;
     margin: 0 0 20px 42px;
     padding: 10px 30px;
-    white-space: nowrap;
-    overflow: hidden;
+    /*white-space: nowrap;*/
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -394,7 +400,285 @@ body {
     border: 19px solid #ffffff;
     border-left-color: #ee3643;
 }
+/* Popular Brands */
+.brands {
+    font-size: 0;
+    margin-bottom: 65px;
+}
+/*.brand {*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*width: 218px;*/
+    /*margin-right: 20px;*/
+    /*text-align: center;*/
+    /*line-height: 143px;*/
+    /*border: 1px solid #e5e5e5;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+/*.brand img {*/
+    /*vertical-align: middle;*/
+/*}*/
+.brand {
+display: inline-block;
+vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.brand img {
+    display: block;
 
+    width: 218px;
+    height: 143px;
+    border: 1px solid #e7e7e7;
+}
+
+.brand:nth-child(4n) {
+    margin-right: 0;
+}
+.brand:hover {
+    border-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.brand:active {
+    border-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+
+.brand:active img {
+    opacity: 0.5;
+}
+/* Service */
+
+.service {
+    padding-top: 62px;
+    background-color: #f2f6f8;
+}
+.service h2 {
+    margin-bottom: 22px;
+}
+.service-text {
+    width: 400px;
+    margin-bottom: 68px;
+}
+.service-slider {
+    min-height: 283px;
+    outline: 1px solid darkred;
+}
+/* main-footer Company */
+.main-footer {
+    position: relative;
+    padding: 75px 0 86px 0;
+}
+.main-footer-left {
+    float: left;
+    width: 540px;
+}
+
+.main-footer h2 {
+    margin-bottom: 22px;
+}
+
+.main-footer p {
+    margin-bottom: 22px;
+}
+
+.footer-delivery-list {
+    padding: 0;
+    margin: 0 0 37px 0;
+}
+
+.footer-delivery-list li{
+    position: relative;
+    margin: 0;
+    padding: 0 0 20px 35px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-weight: 400;
+    list-style: none;
+}
+
+.footer-delivery-list li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-delivery-list li:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    margin-right: 10px;
+    background-color: #fb565a;
+}
+
+.btn-about {
+    width: 220px;
+}
+.main-footer-right {
+    width: 300px;
+    float: right;
+}
+
+.map {
+    display:block;
+    padding-top: 10px;
+    margin-bottom: 35px;
+
+}
+/* Footer */
+.page-footer {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.footer-top {
+    background-color: #32425c;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-contacts {
+    width: 350px;
+    margin-bottom: 31px;
+    float: left;
+}
+
+.footer-logo {
+    width: 220px;
+    margin-bottom: 33px;
+    padding: 18px 0 15px 0;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #ee3643;
+    border-radius: 0;
+    box-shadow: 0 5px #b52933;
+}
+.footer-menu {
+    float: right;
+    width: 548px;
+    margin-top: 21px;
+}
+.footer-menu-list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.footer-menu-list:nth-child(2) {
+    margin-left: 25px;
+}
+
+.footer-menu-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-menu-link {
+    display: block;
+    margin: 17px 29px 17px 29px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-menu-item:first-child .footer-menu-link {
+    margin-left: 0;
+}
+
+.footer-menu-item:last-child .footer-menu-link {
+    margin-right: 0;
+}
+
+.footer-menu-list:nth-child(2) .footer-menu-link {
+    color: #ffd180;
+}
+
+.footer-menu-link:hover {
+    text-decoration: underline;
+}
+
+.footer-menu-link:active {
+    opacity: 0.5;
+}
+/* Footer end */
+.footer-end {
+    padding: 37px 0 37px 0;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #293449;
+}
+
+.footer-copyright {
+    float: left;
+    width: 300px;
+}
+
+.footer-social {
+    float: left;
+    width: 312px;
+    text-align: center;
+}
+.footer-info {
+    float: right;
+    width: 300px;
+}
+
+.footer-feedback {
+    width: 150px;
+    float: left;
+}
+
+.footer-developer {
+    width: 110px;
+    float: right;
+}
+
+.social {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background: #212a3a url('../img/sprite-soc15.png') no-repeat center;
+    border-radius: 50%;
+}
+.social-vk{
+    background-position: -102px -15px;
+}
+.social-fb{
+    background-position: -15px -15px;
+}
+.social-inst{
+    background-position: -55px -15px;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+.footer-feedback a,
+.footer-developer a{
+    color: #ffd180;
+    text-decoration: none;
+}
+.social:hover,
+.social:active {
+    background-color: #ee3643;
+}
+
+.footer-feedback a:hover,
+.footer-developer a:hover {
+    text-decoration: underline;
+}
+
+.footer-feedback a:active,
+.footer-developer a:active {
+    color: #ee3643;
+    text-decoration: none;
+}
 
 /****sprite*/
 /**/
@@ -438,4 +722,52 @@ body {
     /*width: 75px;*/
     /*height: 61px;*/
     /*background-position: -5px -376px;*/
-/*}*/
+/*}
+.sprite-soc {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-instagramm {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -33px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -5px -60px;
+}
+.sprite-soc15 {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-facebook1 {
+    width: 10px;
+    height: 18px;
+    background-position: -15px -15px;
+}
+
+.sprite--icon-instagramm1 {
+    width: 17px;
+    height: 17px;
+    background-position: -55px -15px;
+}
+
+.sprite--icon-vk1 {
+    width: 20px;
+    height: 12px;
+    background-position: -102px -15px;
+}
+
+
