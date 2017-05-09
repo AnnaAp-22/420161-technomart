@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,8 +13,8 @@
             <div class="container clearfix ">
                 <a class="logo-link btn">Техномарт</a>
                 <form action="#" class="header-search">
-                    <input type="search" name="search" placeholder="Поиск:" class="input">
-                    <input type="submit" name="sub" value="" class="submit">
+                    <input class="search-input" type="search" name="search" placeholder="Поиск:" >
+                    <input class="search-submit" type="submit" name="sub" value="" >
                 </form>
                 <a href="#" class="bar-btn bookmarks">Закладки: <span class="bar-all">0</span></a>
                 <a href="#" class="bar-btn cart">Корзина: <span class="bar-all">0</span></a>
@@ -29,12 +28,8 @@
                         Интернет-магазин строительных материалов<br>и инструментов для ремонта
                     </p>
                     <div class="header-contacts">
-                        <div class="header-phone">
-                            +7 (812) 555-05-55
-                        </div>
-                        <div class="header-address">
-                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                        </div>
+                        <p class="header-phone">+7 (812) 555-05-55</p>
+                        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
                     <div class="user-block clearfix">
                         <a class="registry" href="#">Регистрация</a>
@@ -71,15 +66,15 @@
     </header>
     <main>
         <div class="features container clearfix">
-            <section class="features-col-left features-color1 flag-new">
+            <section class="features-col-left features-materials flag-new">
                 <h2 class="feature-title">Материалы</h2>
                 <a class="btn feature-btn" href="#">На любой вкус</a>
             </section>
-            <section class="features-col-left features-color2">
+            <section class="features-col-left features-tools">
                 <h2 class="feature-title">Инструмент</h2>
                 <a class="btn feature-btn" href="#">На все случаи</a>
             </section>
-            <section class="features-col-right features-color3">
+            <section class="features-col-right features-technics">
                 <h2 class="feature-title">Техника</h2>
                 <a class="btn feature-btn" href="#">Для стройки</a>
             </section>
@@ -109,11 +104,11 @@
                     </div>
                 </div>
             </div>
-            <section class="features-col-right features-color4">
+            <section class="features-col-right features-discount">
                 <h2 class="feature-title"> Скидки 50%</h2>
                 <a class="btn feature-btn" href="#">На 350 товаров</a>
             </section>
-            <section class="features-col-right features-color5">
+            <section class="features-col-right features-delivery">
                 <h2 class="feature-title"> Доставка</h2>
                 <a class="btn feature-btn" href="#">Бесплатно</a>
             </section>
@@ -126,7 +121,7 @@
             <div class="popular-catalog">
                 <article class="catalog-item">
                     <div class="actions">
-                        <a href="#" class="btn buy ">Купить</a>
+                        <a href="cart.html" class="btn buy ">Купить</a>
                         <a href="#" class="btn bookmark">В закладки</a>
                     </div>
                     <div class="catalog-item-image">
@@ -138,43 +133,37 @@
                 </article>
                 <article class="catalog-item">
                     <div class="actions">
-                        <a href="#" class="btn buy ">Купить</a>
+                        <a href="cart.html" class="btn buy ">Купить</a>
                         <a href="#" class="btn bookmark">В закладки</a>
                     </div>
                     <div class="catalog-item-image">
                         <img src="img/bfg3000.jpg" width="216" height="150" alt="BFG 3000">
                     </div>
-                    <h3>
-                        Перфоратор BOSCH BFG 3000
-                    </h3>
+                    <h3>Перфоратор BOSCH BFG 3000</h3>
                     <div class="catalog-price-full">22500 Р.</div>
                     <div class="catalog-price-current">15500 Р.</div>
                 </article>
                 <article class="catalog-item">
                     <div class="actions">
-                        <a href="#" class="btn buy ">Купить</a>
+                        <a href="cart.html" class="btn buy ">Купить</a>
                         <a href="#" class="btn bookmark">В закладки</a>
                     </div>
                     <div class="catalog-item-image">
                         <img src="img/bfg6000.jpg" width="216" height="150" alt="BFG 6000">
                     </div>
-                    <h3>
-                        Перфоратор BOSCH BFG 6000
-                    </h3>
+                    <h3>Перфоратор BOSCH BFG 6000</h3>
                     <div class="catalog-price-full">30500 Р.</div>
                     <div class="catalog-price-current">25500 Р.</div>
                 </article>
                 <article class="catalog-item">
                     <div class="actions">
-                        <a href="#" class="btn buy ">Купить</a>
+                        <a href="cart.html" class="btn buy ">Купить</a>
                         <a href="#" class="btn bookmark">В закладки</a>
                     </div>
                     <div class="catalog-item-image">
                         <img src="img/bfg2000.jpg" width="216" height="150" alt="BFG 2000">
                     </div>
-                    <h3>
-                        Перфоратор BOSCH BFG 2000
-                    </h3>
+                    <h3>Перфоратор BOSCH BFG 2000</h3>
                     <div class="catalog-price-full"></div>
                     <div class="catalog-price-current">12500 Р.</div>
                 </article>
@@ -361,9 +350,9 @@
                     &copy; 2010–2017 Компания «Техномарт»<br>Все права защищены
                 </div>
                 <div class="footer-social">
-                    <a class="social social-vk" href="#"></a>
-                    <a class="social social-fb" href="#"></a>
-                    <a class="social social-inst" href="#"></a>
+                    <a class="social social-vk" href="#">Вконтакте</a>
+                    <a class="social social-fb" href="#">Фейсбук</a>
+                    <a class="social social-inst" href="#">Инстаграм</a>
                 </div>
                 <div class="footer-info clearfix">
                     <div class="footer-feedback">
@@ -378,5 +367,41 @@
             </div>
         </div>
     </footer>
+    <div class="modal modal-ask">
+        <button class="modal-close " type="button" title="Закрыть">
+            Закрыть</button>
+        <form class="ask-form" action="#" method="post">
+            <div class="modal-content">
+                <label  for="ask-name">Ваше имя:
+                    <input  type="text" name="name" id="ask-name" placeholder="Представьтесь, пожалуйста" required>
+                </label>
+                <label  for="ask-email">Ваш e-mail:
+                    <input  type="email" name="email" id="ask-email" placeholder="Для отправки ответа" required>
+                </label>
+                <label class="label-text" for="ask-text">Текст письма:
+                    <textarea  name="text" rows="5" id="ask-text" placeholder="В свободной форме"></textarea>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn btn" type="submit" name="send">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal modal-big-map">
+    <button class="modal-close" type="button">Закрыть</button>
+        <!--<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qSRLY0" width="940" height="446" frameborder="0"></iframe>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461632458!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455716866596" width="940" height="446" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="modal modal-cart ">
+        <button class="modal-close " type="button" title="Закрыть"></button>
+        <div class=" modal-cart-content">
+            <p class="modal-text-add">Товар добавлен в корзину!</p>
+        </div>
+        <div class="modal-footer ">
+            <button class="modal-cart-btn btn" type="submit" name="send">Оформить заказ</button>
+            <a class="modal-cart-btn modal-close-btn" href="#">Продолжить покупки</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
