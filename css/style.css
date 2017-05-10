@@ -1,5 +1,5 @@
 body {
-    font-family: 'PT Sans', 'Arial', sans-serif;;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     color: #000000;
     font-weight: 400;
@@ -256,9 +256,12 @@ img {
     background-color: #161d29;
 }
 
+.bar-all {
+    padding-left: 4px;
+}
+
 .order {
     text-align: center;
-
     background-color: #63a63e;
 }
 
@@ -311,14 +314,10 @@ img {
     position: absolute;
     top: 11px;
     left: 12px;
-
     display: block;
-
     width: 19px;
     height: 19px;
-
     content: '';
-
     background: url('../img/my-sprite.png') no-repeat -10px -522px;
 }
 
@@ -360,12 +359,9 @@ img {
     position: absolute;
     top: 14px;
     left: 12px;
-
     width: 21px;
     height: 17px;
-
     content: '';
-
     background: url('../img/my-sprite.png') no-repeat -10px -374px;
 }
 
@@ -406,7 +402,6 @@ img {
     position: relative;
     padding: 10px 21px 10px 47px;
     display: block;
-    /*float: left;*/
     width: 232px;
     font-size: 21px;
     line-height: 24px;
@@ -453,9 +448,11 @@ img {
     opacity: .3;
     color: rgba(0, 0, 0, .3);
 }
-.user-links{
-    padding-left:6px;
+
+.user-links {
+    padding-left: 6px;
 }
+
 .user-link {
     padding-left: 12px;
     color: #32425c;
@@ -531,6 +528,11 @@ img {
 }
 
 .main-menu a:active {
+    color: #a1a4a8;
+    background: #1d2739;
+}
+
+.main-menu .active {
     color: #a1a4a8;
     background: #1d2739;
 }
@@ -668,19 +670,23 @@ img {
     position: relative;
 }
 
-.slider-direction a {
+.slider-direction button {
     position: absolute;
     display: block;
     top: 120px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-right: none;
+    border-bottom: none;
+    outline: none;
     font-size: 0;
     color: #ffffff;
     background-color: transparent;
     text-decoration: none;
-
-    width: 25px;
-    height: 25px;
-    border-top: 3px solid #ffffff;
-    border-left: 3px solid #ffffff;
     cursor: pointer;
     z-index: 50;
 }
@@ -695,6 +701,12 @@ img {
     right: 25px;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+}
+
+.slider-direction button:hover {
+    border-top: 3px solid #000000;
+    border-left: 3px solid #000000;
+    outline: none;
 }
 
 .slider-controls {
@@ -965,7 +977,7 @@ img {
 .flag-new:after {
     content: '';
     position: absolute;
-    top:-1px;
+    top: -1px;
     right: -1px;
     width: 60px;
     height: 59px;
@@ -1030,7 +1042,7 @@ img {
 }
 
 .service-text {
-    width: 400px;
+    width: 415px;
     margin-bottom: 68px;
 }
 
@@ -1216,7 +1228,7 @@ img {
 .map {
     display: block;
     padding-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 
 }
 
@@ -1260,11 +1272,12 @@ img {
     margin: 0;
     padding: 0;
     font-size: 0;
+    float: right;
 }
 
-.footer-menu-list:nth-child(2) {
-    margin-left: 25px;
-}
+/*.footer-menu-list:nth-child(2) {*/
+/*margin-left: 25px;*/
+/*}*/
 
 .footer-menu-item {
     display: inline-block;
@@ -1594,7 +1607,6 @@ img {
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 20px;
-
     position: relative;
     display: block;
     padding-left: 34px;
@@ -1741,7 +1753,6 @@ img {
     line-height: 17px;
     text-decoration: none;
     text-transform: uppercase;
-
     display: block;
     margin-left: 64px;
     color: rgba(0, 0, 0, .3);
@@ -1770,7 +1781,6 @@ img {
     width: 11px;
     height: 10px;
     margin-top: 4px;
-
     background: url('../img/my-sprite.png') no-repeat;
 }
 
