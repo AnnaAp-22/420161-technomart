@@ -283,7 +283,7 @@ img {
 .header-description {
     float: left;
     width: 218px;
-    margin: 3px 51px 0 51px;
+    margin: 3px 50px 0 52px;
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
@@ -298,7 +298,7 @@ img {
 
 .header-phone {
     position: relative;
-    margin: 0 0 5px 0;
+    margin: 1px 0 4px 0;
     /*margin-bottom: 5px;*/
     padding: 9px 47px 9px 72px;
     font-size: 21px;
@@ -309,8 +309,8 @@ img {
 
 .header-phone::before {
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 11px;
+    left: 12px;
 
     display: block;
 
@@ -453,9 +453,11 @@ img {
     opacity: .3;
     color: rgba(0, 0, 0, .3);
 }
-
+.user-links{
+    padding-left:6px;
+}
 .user-link {
-    padding-left: 15px;
+    padding-left: 12px;
     color: #32425c;
     font-size: 16px;
     line-height: 24px;
@@ -793,7 +795,7 @@ img {
 /* Popular  */
 .popular-header {
     margin-bottom: 20px;
-    padding: 25px 24px 26px 26px;
+    padding: 25px 24px 26px 28px;
     background-color: #f7f3ec;
 }
 
@@ -963,8 +965,8 @@ img {
 .flag-new:after {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
+    top:-1px;
+    right: -1px;
     width: 60px;
     height: 59px;
     background-image: url('../img/my-sprite.png');
@@ -1019,7 +1021,7 @@ img {
 /* Service */
 
 .service {
-    padding-top: 62px;
+    padding-top: 61px;
     background-color: #f2f6f8;
 }
 
@@ -1393,7 +1395,7 @@ img {
 }
 
 .breadcrumbs {
-    margin-top: 21px;
+    margin-top: 20px;
     margin-bottom: 20px;
     list-style: none;
     /*font-size: 0;*/
@@ -1779,7 +1781,7 @@ img {
 }
 
 .sort-down {
-    margin-left: 21px;
+    margin-left: 19px;
 
     background-position: -10px -283px;
 }
