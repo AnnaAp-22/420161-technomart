@@ -505,7 +505,7 @@ img {
 }
 
 .main-menu a {
-    display: block;
+    display: table;
     text-decoration: none;
     color: #ffffff;
     padding: 20px 30px 18px 30px;
@@ -1262,6 +1262,10 @@ img {
     box-shadow: 0 5px #b52933;
 }
 
+.footer-address {
+    padding-left: 3px;
+}
+
 .footer-menu {
     float: right;
     width: 548px;
@@ -1285,7 +1289,7 @@ img {
 }
 
 .footer-menu-link {
-    display: block;
+    display: table;
     margin: 17px 29px 17px 29px;
     font-size: 18px;
     text-decoration: none;
