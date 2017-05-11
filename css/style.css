@@ -489,7 +489,7 @@ img {
     border-bottom: 5px solid #293449;
 }
 
-.main-menu ul {
+.menu-items {
     font-size: 0;
     list-style: none;
     text-align: center;
@@ -497,14 +497,14 @@ img {
     margin: 0;
 }
 
-.main-menu li {
+.menu-item {
     display: inline-block;
     vertical-align: top;
     font-size: 17px;
     line-height: 17px;
 }
 
-.main-menu a {
+.menu-item a {
     display: table;
     text-decoration: none;
     color: #ffffff;
@@ -512,11 +512,10 @@ img {
     /*padding:20px 31px 18px 31px;*/
 
 }
-
-/*.main-menu li:first-child a {*/
-/*padding-left: 52px;*/
-/*!*padding-right: 32px;*!*/
-/*}*/
+.menu-item:first-child a {
+    padding-left: 26px;
+    padding-right: 33px;
+}
 
 /*.main-menu li:last-child a {*/
 /*!*padding-left: 31px;*!*/
@@ -1181,7 +1180,7 @@ img {
     margin-bottom: 22px;
 }
 
-.main-footer p {
+.main-footer-text{
     margin-bottom: 22px;
 }
 
@@ -1400,6 +1399,11 @@ img {
 }
 
 /******CATALIG**********/
+.bar-add,
+.bar-add:hover,
+.bar-add:active {
+    background-color: #ee3643;
+}
 .blk-txt {
     margin: 0;
     padding: 0;
@@ -1761,6 +1765,7 @@ img {
     margin-left: 64px;
     color: rgba(0, 0, 0, .3);
     border-bottom: 1px dotted #ee3643;
+    cursor: pointer;
 }
 
 .sort-list:first-child .sort-link{
@@ -1776,7 +1781,6 @@ img {
 .sort-active {
     color: #ee3643;
     border: none;
-    /*margin-right: 8px;*/
 }
 
 .sort-active:hover {
