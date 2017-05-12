@@ -512,6 +512,7 @@ img {
     /*padding:20px 31px 18px 31px;*/
 
 }
+
 .menu-item:first-child a {
     padding-left: 26px;
     padding-right: 33px;
@@ -729,8 +730,8 @@ img {
     cursor: pointer;
 }
 
-#features-btn-1:checked ~ .slider-controls label[for="features-btn-1"],
-#features-btn-2:checked ~ .slider-controls label[for="features-btn-2"] {
+.features-btn-1:checked ~ .slider-controls label[for="features-btn-1"],
+.features-btn-2:checked ~ .slider-controls label[for="features-btn-2"] {
     background-color: #ca2c37;
 }
 
@@ -754,20 +755,20 @@ img {
     min-height: 266px;
 }
 
-#features-btn-1:checked ~ .features-slider-inner {
+.features-btn-1:checked ~ .features-slider-inner {
     background-image: url(../img/slider-1.jpg);
 }
 
-#features-btn-2:checked ~ .features-slider-inner {
+.features-btn-2:checked ~ .features-slider-inner {
     background-image: url(../img/slider-2.jpg);
 }
 
-#features-btn-1:checked ~ .features-slider-inner .features-slides {
+.features-btn-1:checked ~ .features-slider-inner .features-slides {
     -webkit-transform: translate(0);
     transform: translate(0);
 }
 
-#features-btn-2:checked ~ .features-slider-inner .features-slides {
+.features-btn-2:checked ~ .features-slider-inner .features-slides {
     -webkit-transform: translate(-620px);
     transform: translate(-620px);
 }
@@ -1090,9 +1091,9 @@ img {
     background-color: #293449;
 }
 
-#service-btn-1:checked ~ .service-controls label[for="service-btn-1"],
-#service-btn-2:checked ~ .service-controls label[for="service-btn-2"],
-#service-btn-3:checked ~ .service-controls label[for="service-btn-3"] {
+.service-btn-1:checked ~ .service-controls label[for="service-btn-1"],
+.service-btn-2:checked ~ .service-controls label[for="service-btn-2"],
+.service-btn-3:checked ~ .service-controls label[for="service-btn-3"] {
     color: #32425c;
     background-color: #ffffff;
     border-color: #ffffff;
@@ -1108,15 +1109,15 @@ img {
     background-position: 100% 100%;
 }
 
-#service-btn-1:checked ~ .service-inner {
+.service-btn-1:checked ~ .service-inner {
     background-image: url(../img/delivery.png);
 }
 
-#service-btn-2:checked ~ .service-inner {
+.service-btn-2:checked ~ .service-inner {
     background-image: url(../img/guarantee.png);
 }
 
-#service-btn-3:checked ~ .service-inner {
+.service-btn-3:checked ~ .service-inner {
     background-image: url(../img/credit.png);
 }
 
@@ -1130,17 +1131,17 @@ img {
     width: 620px;
 }
 
-#service-btn-1:checked ~ .service-inner .service-slides {
+.service-btn-1:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(0);
     transform: translate(0);
 }
 
-#service-btn-2:checked ~ .service-inner .service-slides {
+.service-btn-2:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(-620px);
     transform: translate(-620px);
 }
 
-#service-btn-3:checked ~ .service-inner .service-slides {
+.service-btn-3:checked ~ .service-inner .service-slides {
     -webkit-transform: translate(-1240px);
     transform: translate(-1240px);
 }
@@ -1180,7 +1181,7 @@ img {
     margin-bottom: 22px;
 }
 
-.main-footer-text{
+.main-footer-text {
     margin-bottom: 22px;
 }
 
@@ -1404,6 +1405,7 @@ img {
 .bar-add:active {
     background-color: #ee3643;
 }
+
 .blk-txt {
     margin: 0;
     padding: 0;
@@ -1768,10 +1770,9 @@ img {
     cursor: pointer;
 }
 
-.sort-list:first-child .sort-link{
+.sort-list:first-child .sort-link {
     margin-right: 8px;
 }
-
 
 .sort-link:hover {
     color: #000;
